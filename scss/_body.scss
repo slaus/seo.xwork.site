@@ -1,0 +1,185 @@
+/*!
+ * Body content
+ */
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,600');
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+/* error if tags without attr */
+img:not([alt]),
+label:not([for]),
+input[type=submit]:not([value]) {
+  outline: 1px dotted red;
+}
+
+/* error if first child not used  */
+ul > *:not(li),
+ol > *:not(li),
+dl > *:not(dt):not(dd) {
+  outline: 1px dotted red;
+}
+
+input:focus, textarea, a, button {
+  outline: none !important;
+  //-webkit-appearance: none !important; //trouble with radiobutton
+}
+
+.clearfix {
+
+  &:after,
+  &:before {
+    content: "";
+    display: table;
+    height: 0;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+.wrapper {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#back-to-top {
+  color: $white;
+  width: 50px;
+  height: 50px;
+  background: $green;
+  text-transform: uppercase;
+  position: fixed;
+  right: 20px;
+  bottom: 50px;
+  line-height: 50px;
+  font-size: 22px;
+  text-align: center;
+  cursor: pointer;
+  display: none;
+  z-index: 999;
+
+  &:hover {
+    background: $green;
+    text-decoration: none;
+  }
+}
+
+.invert {
+  color: $white;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.green-color {
+  color: $green;
+}
+
+div {
+
+  &.black {
+    background: $black;
+  }
+
+  &.green-color {
+    background: $green;
+  }
+}
+
+.padding-top-30 {
+  padding-top: 30px;
+}
+
+.padding-bottom-30 {
+  padding-bottom: 30px;
+}
+
+.margin-auto {
+  margin: auto;
+}
+
+.flex {
+  display: flex;
+  height: -webkit-fill-available;
+
+  @media screen and (max-width: 767px) {
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  &.center {
+    justify-content: center;
+  }
+
+  &.column {
+    flex-direction: column;
+
+    &.reverse {
+      flex-direction: column-reverse;
+    }
+  }
+  &.row {
+    flex-direction: row;
+
+    &.reverse {
+      flex-direction: row-reverse;
+    }
+  }
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: $white;
+  background-color: $green;
+  transition: .5s;
+}
+.navbar-default .navbar-nav > .active > a:hover {
+  color: $white;
+  background-color: #449d44;
+  border-color: #398439;
+  transition: .5s;
+}
+button.btn {
+  padding-left: 30px;
+  padding-right: 30px;
+  width: fit-content;
+  width: -moz-max-content;
+  border-bottom: 3px solid rgba(0,0,0,.25);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+  padding-top: 12px;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #ddd;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #ddd;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #ddd;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #ddd;
+}
+.animate, .animate:hover {
+  transition: .5s;
+}
+.hover:hover {
+  
+  &.invert {
+    color: $green;
+  }
+}

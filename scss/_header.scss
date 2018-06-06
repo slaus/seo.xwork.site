@@ -1,0 +1,15 @@
+/*!
+ * Header content
+ */
+.header {
+
+  & .logo {
+    height: 100%;
+    width: auto;
+  }
+
+  & .navbar-brand {
+    padding: 0 15px;
+  }
+
+}
