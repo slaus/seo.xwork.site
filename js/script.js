@@ -75,7 +75,7 @@ $(function () {
             }
         })
         .jcarouselAutoscroll({
-            interval: 50000,
+            interval: 10000,
             target: '+=1',
             autostart: true,
         })
