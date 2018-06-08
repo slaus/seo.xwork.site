@@ -68,8 +68,8 @@ a, a:hover {
   background: #0dbd00;
   text-transform: uppercase;
   position: fixed;
-  right: 20px;
-  bottom: 50px;
+  right: 30px;
+  bottom: 115px;
   line-height: 50px;
   font-size: 22px;
   text-align: center;
@@ -166,6 +166,11 @@ button.btn, a.btn {
   font-weight: 700;
   font-size: 16px;
   padding-top: 12px; }
+  @media screen and (max-width: 767px) {
+    button.btn, a.btn {
+      font-size: 13px;
+      padding-left: 15px;
+      padding-right: 15px; } }
   button.btn i.fa, a.btn i.fa {
     margin-right: 10px; }
 
@@ -257,7 +262,8 @@ button.btn, a.btn {
   -webkit-transform: translate(-50%, 0);
   -ms-transform: translate(-50%, 0);
   transform: translate(-50%, 0);
-  margin: 0; }
+  margin: 0;
+  text-align: center; }
 
 .jcarousel-pagination a {
   text-decoration: none;
@@ -293,6 +299,10 @@ button.btn, a.btn {
   line-height: 30px;
   padding-bottom: 80px;
   padding-left: 0; }
+  @media screen and (max-width: 767px) {
+    .faq {
+      font-size: 18px;
+      line-height: 26px; } }
 
 .faq .question {
   cursor: pointer;
@@ -310,6 +320,15 @@ button.btn, a.btn {
   display: none;
   font-size: 18px;
   color: #aaa; }
+  @media screen and (max-width: 767px) {
+    .faq .answer {
+      font-size: 16px; } }
+
+@media screen and (max-width: 767px) {
+  .center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto; } }
 
 /*!
  * Header content
