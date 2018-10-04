@@ -497,3 +497,47 @@ button.btn, a.btn {
     color: #fff;
     background: #2f2d2d;
     border: 0; }
+    
+.navbar-default .navbar-nav>li:not(:last-child)>a {
+    color: #0dbd00;
+    font-size: 20px;
+    font-weight: 600;
+}
+.nav.navbar-nav li img {width:28px;}
+@media screen and (max-width:991px) {
+  .navbar .container {
+    width: 100%;
+  }
+  .navbar-default .navbar-nav>li:not(:last-child)>a {
+    font-size: 18px;
+  }
+  .navbar-default .navbar-nav>li>a {
+    font-size: 14px;
+  }
+  .header .navbar-brand {
+    padding: 0 10px;
+  }
+  /*.navbar-toggle {
+    display: none;
+  }*/
+  .nav {
+    /*width: 250px;*/
+    text-align: center;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .navbar-default .navbar-nav>li:not(:last-child)>a {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width:767px) {
+  .navbar-default .navbar-nav>li:not(:last-child)>a {
+    font-size: 18px;
+  }
+  .nav>li {
+    width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+

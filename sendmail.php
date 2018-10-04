@@ -2,11 +2,11 @@
 // Email Submit
 // Note: filter_var() requires PHP >= 5.2.0
 //print_r($_POST);
-if ( isset($_POST['name']) || isset($_POST['tel']) || isset($_POST['message']) || isset($_POST['url']) || isset($_POST['region']) || isset($_POST['hidden'])  ) {
+if ( isset($_POST['name']) || isset($_POST['tel']) || isset($_POST['email']) || isset($_POST['message']) || isset($_POST['url']) || isset($_POST['region']) || isset($_POST['hidden'])  ) {
 
 	//$to = "mister.slaus@gmail.com";	// receiver of the email
-        $to="mister.slaus@gmail.com";
-        $subject = "--- Сообщение с сайта SEO ---";			// subject of the email
+        $to="seo@xwork.site";
+        $subject = "---- Сообщение с сайта SEO ----";			// subject of the email
 	$message = '
 	<html>
 		<head>
@@ -16,6 +16,7 @@ if ( isset($_POST['name']) || isset($_POST['tel']) || isset($_POST['message']) |
 		<body>
 			<h3>Имя: <span style="font-weight: normal;">' . $_POST['name'] . '</span></h3>
 			<h3>Телефон: <span style="font-weight: normal;">' . $_POST['tel'] . '</span></h3>
+			<h3>E-mail: <span style="font-weight: normal;">' . $_POST['email'] . '</span></h3>
 			<h3>---- <span style="font-weight: normal;">' . $_POST['hidden'] . '</span> ----</h3>
 			<h3>URL сайта: <span style="font-weight: normal;">' . $_POST['url'] . '</span></h3>
 			<h3>Регион рекламы: <span style="font-weight: normal;">' . $_POST['region'] . '</span></h3>
